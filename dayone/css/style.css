@@ -1,0 +1,19 @@
+html{
+    background-color: skyblue;
+}
+.keys{
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.key {
+    border: .4rem solid black;
+    border-radius: .5rem;
+    margin: 1rem;
+}
+kbd{
+    display: block;
+    text-align: center;
+}

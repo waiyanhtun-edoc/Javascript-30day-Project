@@ -4,8 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     
+
+    <div class="keys">
+        <div data-key="65" class="key">
+            <kbd>A</kbd>
+            <span class="sound">hello</span>
+        </div>
+        <div data-key="83" class="key">
+            <kbd>S</kbd>
+            <span class="sound">hello</span>
+        </div>
+        <div data-key="68" class="key">
+            <kbd>D</kbd>
+            <span class="sound">hello</span>
+        </div>
+        <div data-key="70" class="key">
+            <kbd>F</kbd>
+            <span class="sound">hello</span>
+        </div>
+    </div>
+
+    <audio data-key="65" src="sounds/tom.wav"></audio>
+    <audio data-key="83" src="sounds/boom.wav"></audio>
+    <audio data-key="68" src="sounds/clap.wav"></audio>
+    <audio data-key="70" src="sounds/hihat.wav"></audio>
+
+    <script>
+        function playSound(e){
+            const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+        }
+    </script>
+
 </body>
 </html>
