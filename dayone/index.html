@@ -181,12 +181,7 @@
         }
 
         function playSound(e) {
-            let keyCode;
-            if (e.type === 'click') {
-                keyCode = e.currentTarget.dataset.key;
-            } else {
-                keyCode = e.keyCode;
-            }
+            
             const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
             const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
             if (!audio) return;
@@ -200,11 +195,7 @@
         window.addEventListener('keydown', playSound);
 
 
-        const num = window.addEventListener('keydown', function (e) {
-            return e.keyCode;
-        })
-
-        const text = document.getElementsByTagName("kbd")[1].innerHTML = ;
+        
     </script>
 </body>
 
