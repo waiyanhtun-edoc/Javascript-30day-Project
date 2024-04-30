@@ -1,31 +1,28 @@
 const hourView = document.querySelector('.hour');
-const minusView = document.querySelector('.minute');
+const minuteView = document.querySelector('.minute');
 const secondView = document.querySelector('.second');
-const digitalView = document.querySelector('.digital-time');
-
-
+const digitalTimeView = document.querySelector('.digital-time');
 
 function setDate(){
     const now = new Date();
-    const hours = now.getHours();
-    const minutes = now.getMinutes();
-    const seconds = now.getSeconds();
-    const digitalTime = now.toLocaleTimeString('eng',{
-        hour24:true,
-        hour: "numeric",
-        minute:"numeric",
-        second:"numeric",
-    });
+    const hour = now.getHours();
+    const minute = now.getMinutes();
+    const second = now.getSeconds();
+    const digital = now.toLocaleTimeString("en-us",{
+        hour12:true,
+        
+    })
 
-    const secondsDeg = ((seconds / 60 ) * 360);
-    const minutesDeg = ((minutes / 60 ) * 360);
-    const hoursDeg = ((hours / 12 ) * 360);
+    const secondDeg = ((second / 60 ) * 360);
+    secondView.style.transform = `rotate(${secondDeg}deg)`;
 
-    secondView.style.transform = `rotate(${secondsDeg}deg)`;
-    minusView.style.transform = `rotate(${minutesDeg}deg)`;
-    hourView.style.transform = `rotate(${hoursDeg}deg)`;
-    digitalView.textContent = digitalTime;
+    const minuteDeg = ((minute / 60) * 360);
+    minuteView.style.transform = `rotate(${minuteDeg}deg)`;
 
+    const hourDeg = ((hour / 12) * 360);
+    hourView.style.transform = `rotate(${hourDeg}deg)`;
+
+    digitalTimeView.textContent = digital;
+    
 }
-
 setInterval(setDate,1000);
