@@ -1,8 +1,8 @@
 html {
     font-size: 10px;
-    /* background: url('background.jpg') bottom center; */
+    background: url('background.jpg') bottom center;
     /* background: url('../background.jpg') bottom center; */
-    background-color: aqua;
+    /* background-color: aqua; */
     background-size: cover;
   }
 
