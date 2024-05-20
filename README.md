@@ -9,7 +9,7 @@
 ## WakaTime  
     The WakaTime Chrome extension is open source on GitHub. The Chrome extension shows the time you spend reading documentation, debugging a web app, and other browser based activity.
 
-    ![alt text](readme_folder/wakatime.png)
+    ![wakatime image](https://github.com/waiyanhtun-edoc/Javascript-30day-Project/blob/main/readme_folder/wakatime.png)
 
 
 
