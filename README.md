@@ -4,12 +4,26 @@
 ### Git [_Download_][git]
 ### Git Setup [_here_][git setup]
 ### SSH key Setup for Github [_here_][ssh key setup]
-### Wakatime VS Code Extension [_here_][wakatime]
+### WakaTime VS Code Extension [_here_][wakatime]
 
 ## WakaTime  
     The WakaTime Chrome extension is open source on GitHub. The Chrome extension shows the time you spend reading documentation, debugging a web app, and other browser based activity.
 
-    ![wakatime image](https://github.com/waiyanhtun-edoc/Javascript-30day-Project/blob/main/readme_folder/wakatime.png)
+![wakatime](readme_folder/wakatime.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
