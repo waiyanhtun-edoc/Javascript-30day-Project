@@ -8,9 +8,9 @@
 
 ## Daily Project <span style="color: orange"> **_Blog From Me_** </span> [_Read_][reading blog]
 
-## Javascript 30 Day <span style="color:red"> **Repositories Original**</span> [_Download_][javascript 30 day repo original ]
+## Javascript 30 Day <span style="color:red"> **_Repositories Original_**</span> [_Download_][javascript 30 day repo original ]
 
-## Javascript 30 Day Stream <span style="color:red"> **Website Original**</span> [_Watch_][javascript stream]
+## Javascript 30 Day Stream <span style="color:red"> **_Website Original_**</span> [_Watch_][javascript stream]
 
 # _Requirements for Project Setup_
 
