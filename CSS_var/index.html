@@ -1,74 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS change CSS Property</title>
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
-
-    <style>
-        :root {
-            --base: #ffc600;
-            --spacing: 10px;
-            --blur: 10px;
-        }
-        img {
-            padding: var(--spacing);
-            background: var(--base);
-            filter: blur(var(--blur));
-        }
-        .hl {
-            color: var(--base);
-        }
-        body {
-            text-align: center;
-            background: gray;
-            color: white;
-            font-family: 'Courier New', Courier, monospace;
-            font-weight: 100;
-            font-size: 30px;
-        }
-        .controls {
-            margin-bottom: 50px;
-        }
-        input {
-            width: 100px;
-        }
-    </style>
+    <title>Document</title>
 </head>
+<style>
 
+    :root{
+        --spacing:10px;
+        --blur:10px;
+        --base:#ffc600;
+    }
+    img{
+        padding: var(--spacing);
+        background: var(--base);
+        filter: blur(var(--blur));
+    }
+    .hl{
+        color: var(--base);
+    }
+    .controls{
+        margin-bottom: 30px;
+    }
+    body{
+        text-align: center;
+        font-size: 20px;
+        color: white;
+        background-color: gray;
+    }
+
+</style>
 <body>
-    <h1> Update CSS Variables with <span class="hl">JS</span></h1>
 
     <div class="controls">
+        <h1>Update Variable with <span class="hl">JS</span></h1>
 
         <label for="spacing">Spacing:</label>
-        <input type="range" id="spacing" name="spacing" min="10" max="200" value="10" data-sizing="px">
+        <input type="range" name="spacing" id="spacing" min="10" max="200" value="10" data-sizing="px">
 
         <label for="blur">Blur:</label>
-        <input type="range" id="blur" name="blur" min="0" max="25" value="10" data-sizing="px">
+        <input type="range" name="blur" id="blur" min="0" max="25" value="10" data-sizing="px">
 
-        <label for="base">Color:</label>
-        <input type="color" id="base" name="base" value="#ffc600">
+        <label for="color">Color</label>
+        <input type="color" name="base" id="color" value="#ffc600">
 
     </div>
 
-    <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
+    <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500" alt="walking on mountain image">
 
+    <script>
 
-    <script >
+        const inputs = document.querySelectorAll('.controls input');
 
-        const inputs = document.querySelectorAll(".controls input");
-
-        function handleUpdate() {
+        function handleUpdate(){
             const suff = this.dataset.sizing || '';
             document.documentElement.style.setProperty(`--${this.name}`, this.value + suff);
         }
 
-        inputs.forEach(input => input.addEventListener('change', handleUpdate));
-        // inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
+        inputs.forEach(input => input.addEventListener('change',handleUpdate));        
+
     </script>
 </body>
-
 </html>
